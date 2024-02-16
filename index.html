@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up-form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>This is not a real sign up form.</h1>
+    <h2>Sign up to our new service! Change your life!</h2>
+    <form action="lol/server" method="post" id="form">
+        <fieldset>
+            <legend>Personal information</legend>
+            <li>
+                <label for="first-name">first name:</label>
+                <input type="text" id="first-name" pattern="^[A-Za-z]+$" required placeholder="">
+            </li>
+            <li>
+                <label for="last-name">last name:</label>
+                <input type="text" id="last-name" pattern="^[A-Za-z]+$" required placeholder="">
+            </li>
+            <li>
+                <label for="email">email:</label>
+                <input type="email" id="email" required placeholder="">
+            </li>
+            <li>
+                <label for="tel">phone number:</label>
+                <input type="tel" id="tel" pattern="\d{10}" required placeholder="">
+            </li>
+            <li>
+                <label for=" password">password</label>
+                <input type="password" id="password" minlength="8" maxlength="30" required placeholder="">
+            </li>
+            <li>
+                <label for="rp-password">repeat password:</label>
+                <input type="password" id="rp-password" minlength="8" maxlength="30" required placeholder="">
+            </li>
+        </fieldset>
+
+        <fieldset class="goat">
+            <legend>Who's the GOAT</legend>
+            <ul>
+                <li>
+                    <label for="messi">Messi:</label>
+                    <input type="radio" id="messi" name="goat" value="Messi">
+                </li>
+                <li>
+                    <label for="ronaldo">Ronaldo:</label>
+                    <input type="radio" id="ronaldo" name="goat" value="Ronaldo" disabled>
+                </li>
+                <li>
+                    <label for="neymar">Neymar:</label>
+                    <input type="radio" id="neymar" name="goat" value="Neymar">
+                </li>
+                <li>
+                    <label for="other">Other:</label>
+                    <input type="radio" id="other" name="goat" value="Other">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <li>
+                <label for="legal-age" class="legal-age-label">I'm over 18 years:</label>
+                <input type="checkbox" id="legal-age" required>
+            </li>
+        </fieldset>
+        <button type="submit">submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
